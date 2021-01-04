@@ -1,0 +1,2 @@
+com/viclim/soup/application/SoupBrewApplication.java
+ com.viclim.soup.application.SoupBrewApplication

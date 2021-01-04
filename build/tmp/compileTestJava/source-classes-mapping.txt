@@ -1,0 +1,2 @@
+com.viclim.souptest/sanity/Test001_JunitIsWorking.java
+ com.viclim.souptest.sanity.Test001_JunitIsWorking

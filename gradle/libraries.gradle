@@ -1,0 +1,17 @@
+ext{
+    jsoupVersion = '1.13.1'
+    junitVersion = '5.7.0'
+
+    libs = [
+            main: [
+                    jsoup: "org.jsoup:jsoup:${jsoupVersion}"
+            ],
+            test: [
+                    junit: "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
+                    jsoup: "org.jsoup:jsoup:${jsoupVersion}"
+            ],
+            testRunTime:[
+                    junitEngine: "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+            ]
+    ]
+}

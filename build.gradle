@@ -1,0 +1,40 @@
+defaultTasks 'clean', 'run' //, 'aggregate'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+}
+
+apply plugin: 'java-library'
+apply plugin: 'idea'
+apply plugin: 'application'
+apply from: "$rootDir/gradle/libraries.gradle"
+
+dependencies {
+    implementation libs.main.jsoup
+    testImplementation libs.test.junit,
+            libs.test.jsoup,
+            libs.testRunTime.junitEngine
+}
+
+clean.doFirst{
+    delete "${rootDir}\\target\\"
+    println "{${rootDir}\\target\\} has been deleted"
+}
+
+test {
+    // enable Junit Platform (Junit 5) Support
+    useJUnitPlatform()
+}
+
+gradle.startParameter.continueOnFailure = true
