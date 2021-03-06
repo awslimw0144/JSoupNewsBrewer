@@ -5,6 +5,8 @@ import org.jsoup.nodes.Document;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Basic Sanity Test")
@@ -33,5 +35,14 @@ public class Test001_JunitIsWorking {
         assertEquals("Parsed HTML into a doc.",doc.select("p").get(0).text());
         assertEquals("Parsing again",doc.select("p").get(1).text());
     }
+
+    @Test
+    @DisplayName("Test 004 - Jsoup pulling title from FINVIZ")
+    public void test004() throws IOException{
+        Document doc = Jsoup.connect("https://finviz.com/").get();
+        String title = doc.title();
+        assertEquals("FINVIZ.com - Stock Screener", title);
+    }
+
 }
 

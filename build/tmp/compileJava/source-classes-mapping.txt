@@ -1,2 +1,12 @@
 com/viclim/soup/application/SoupBrewApplication.java
  com.viclim.soup.application.SoupBrewApplication
+com/viclim/soup/application/TradeAppAcceptor.java
+ com.viclim.soup.application.TradeAppAcceptor
+com/viclim/soup/application/QuickFixServerDemo.java
+ com.viclim.soup.application.QuickFixServerDemo
+com/viclim/soup/application/IGAccountDemo.java
+ com.viclim.soup.application.IGAccountDemo
+com/viclim/calculations/application/Sharpie.java
+ com.viclim.calculations.application.Sharpie
+com/viclim/soup/application/BackTest.java
+ com.viclim.soup.application.BackTest

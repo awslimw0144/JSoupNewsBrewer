@@ -1,4 +1,4 @@
-defaultTasks 'clean', 'run' //, 'aggregate'
+defaultTasks 'clean', 'test' //, 'aggregate'
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -21,20 +21,27 @@ apply plugin: 'application'
 apply from: "$rootDir/gradle/libraries.gradle"
 
 dependencies {
-    implementation libs.main.jsoup
+    implementation libs.main.jsoup,
+            libs.main.spring.core,
+            libs.main.quickfix,
+            libs.main.json
+
     testImplementation libs.test.junit,
             libs.test.jsoup,
             libs.testRunTime.junitEngine
 }
 
 clean.doFirst{
-    delete "${rootDir}\\target\\"
-    println "{${rootDir}\\target\\} has been deleted"
+    delete "${rootDir}\\build\\"
+    println "{${rootDir}\\build\\} has been deleted"
 }
 
 test {
     // enable Junit Platform (Junit 5) Support
     useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
 }
 
 gradle.startParameter.continueOnFailure = true

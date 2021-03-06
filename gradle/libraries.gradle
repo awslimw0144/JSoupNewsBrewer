@@ -1,10 +1,18 @@
 ext{
     jsoupVersion = '1.13.1'
     junitVersion = '5.7.0'
+    quickfixVersion = '2.2.0'
+    springVersion = '2.4.2'
+    jsonVersion = '20201115'
 
     libs = [
             main: [
-                    jsoup: "org.jsoup:jsoup:${jsoupVersion}"
+                    jsoup: "org.jsoup:jsoup:${jsoupVersion}",
+                    quickfix: "org.quickfixj:quickfixj-core:${quickfixVersion}",
+                    spring:[
+                            core:"org.springframework.boot:spring-boot-starter-web:${springVersion}"
+                    ],
+                    json:"org.json:json:${jsonVersion}"
             ],
             test: [
                     junit: "org.junit.jupiter:junit-jupiter-api:${junitVersion}",
