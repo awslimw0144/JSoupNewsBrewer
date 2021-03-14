@@ -4,6 +4,7 @@ ext{
     quickfixVersion = '2.2.0'
     springVersion = '2.4.2'
     jsonVersion = '20201115'
+    ibVersion = '9.73'
 
     libs = [
             main: [
@@ -12,7 +13,8 @@ ext{
                     spring:[
                             core:"org.springframework.boot:spring-boot-starter-web:${springVersion}"
                     ],
-                    json:"org.json:json:${jsonVersion}"
+                    json:"org.json:json:${jsonVersion}",
+                    interactiveBroker:"com.ib:interactive-brokers-api:${ibVersion}"
             ],
             test: [
                     junit: "org.junit.jupiter:junit-jupiter-api:${junitVersion}",

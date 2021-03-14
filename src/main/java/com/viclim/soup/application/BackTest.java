@@ -17,7 +17,7 @@ public class BackTest {
         // URL Provider with appended Instrument Ticker
         String baseURL = "https://finance.yahoo.com/quote/";
         String historicalEndPoint = "/history?ltr=1";
-        String sTicker = "D05.SI";
+        String sTicker = "D05.SI"; // ToDo : Allow a function that can dynamically accept a ticker
         StringBuffer sb = new StringBuffer();
         sb.append(baseURL);
         sb.append(sTicker);

@@ -23,7 +23,6 @@ apply from: "$rootDir/gradle/libraries.gradle"
 dependencies {
     implementation libs.main.jsoup,
             libs.main.spring.core,
-            libs.main.quickfix,
             libs.main.json
 
     testImplementation libs.test.junit,
