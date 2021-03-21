@@ -23,7 +23,8 @@ apply from: "$rootDir/gradle/libraries.gradle"
 dependencies {
     implementation libs.main.jsoup,
             libs.main.spring.core,
-            libs.main.json
+            libs.main.json,
+            libs.main.ta4j
 
     testImplementation libs.test.junit,
             libs.test.jsoup,

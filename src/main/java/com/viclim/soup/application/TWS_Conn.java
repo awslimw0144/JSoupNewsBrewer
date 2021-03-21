@@ -1,7 +1,7 @@
 package com.viclim.soup.application;
 
 import com.ib.controller.*;
-import com.viclim.utils.connection.ConnectionHandlerImplementation;
+import com.viclim.utils.handlers.connection.ConnectionHandlerImplementation;
 import com.viclim.utils.logger.LoggerImplementation;
 
 public class TWS_Conn {
@@ -16,6 +16,6 @@ public class TWS_Conn {
 
     public static void main(String... args){
         System.out.println("Attempting to connect");
-        apiController.connect("localhost", 7497, 0);
+        apiController.connect("localhost", 3000, 0);
     }
 }
