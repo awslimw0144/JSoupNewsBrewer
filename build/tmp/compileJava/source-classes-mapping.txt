@@ -265,9 +265,9 @@ com/ib/client/Types.java
  com.ib.client.Types$UsePriceMgmtAlgo
  com.ib.client.Types$VolatilityType
  com.ib.client.Types$WhatToShow
+com/viclim/thread/Find_New_Instrument_Job.java
+ com.viclim.thread.Find_New_Instrument_Job
 com/viclim/soup/application/Active_PortFolio.java
  com.viclim.soup.application.Active_PortFolio
 com/viclim/soup/application/Trading.java
  com.viclim.soup.application.Trading
-com/viclim/thread/Find_New_Instrument_Job.java
- com.viclim.thread.Find_New_Instrument_Job

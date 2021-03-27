@@ -22,6 +22,13 @@ public class Active_PortFolio {
         Thread job_Perform_Trading = new Thread(rTrading);
 
         job_Perform_Trading.start();
-//        job_Find_New_Instrument.start();
+        job_Find_New_Instrument.start();
     }
 }
+
+
+/**
+ * NOTE
+ * Multithread : https://programmingsoup.com/multithreading-in-java
+ * API TEST DOC FORQUANT : https://iexcloud.io/docs/api/
+ */
